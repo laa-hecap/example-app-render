@@ -33,7 +33,7 @@ PAGE = f"""<!doctype html>
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>COAFINA 2025 · Mini app en Flask</title>
+<title>CoAfina 2025 · Mini app en Flask</title>
 <style>
   :root {{ font-family: ui-sans-serif, system-ui; }}
   body {{ margin: 0; background: #0f1221; color: #e8e8ff; }}
@@ -50,12 +50,10 @@ PAGE = f"""<!doctype html>
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>🚀 Flask + Docker listo para Render</h1>
-      <p class="muted">Ejemplo para <strong>COAFINA 2025</strong> — 
+      <h1>Ejemplo para <strong>COAFINA 2025</h1>
+      <p class="muted"> Usando Render</strong>
         <a href="https://laconga.redclara.net/hackathon/" target="_blank" rel="noreferrer">laconga.redclara.net/hackathon/</a>
       </p>
-      <p class="muted">Contenedor escuchando en <code>$PORT</code>. Host <code>{socket.gethostname()}</code>, puerto <code>{os.getenv("PORT","10000")}</code>.</p>
-
       <div class="grid" id="times">
         <!-- Tarjetas de zonas horarias -->
         <div class="kpi"><div class="muted">Ciudad de México</div><div id="mexico_df" style="font-size:22px;margin-top:4px;">…</div></div>
@@ -64,6 +62,9 @@ PAGE = f"""<!doctype html>
         <div class="kpi"><div class="muted">Bogotá</div><div id="colombia"   style="font-size:22px;margin-top:4px;">…</div></div>
         <div class="kpi"><div class="muted">Zúrich</div><div id="suiza"      style="font-size:22px;margin-top:4px;">…</div></div>
       </div>
+
+      <p class="muted">Contenedor escuchando en <code>$PORT</code>. Host <code>{socket.gethostname()}</code>, puerto <code>{os.getenv("PORT","10000")}</code>.</p>
+
 
       <p style="margin-top:18px">
         <a class="btn" href="/healthz">/healthz</a>
