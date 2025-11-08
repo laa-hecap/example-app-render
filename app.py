@@ -25,7 +25,7 @@ PAGE = f"""<!doctype html>
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>🚀 Flask + Docker listo para Render</h1>
+      <h1> Flask + Docker listo para Render</h1>
       <p class="muted">Contenedor escuchando en <code>$PORT</code> para Render.</p>
       <div class="grid">
         <div class="kpi"><div class="muted">Hora del servidor</div><div id="now" style="font-size:22px;margin-top:4px;">…</div></div>
